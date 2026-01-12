@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# PaperHub
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+PaperHub is a student-focused web platform that provides fast and organized access to past papers, including Mids, Finals, Quizzes, and Assignments. It addresses the common problem of scattered academic resources across WhatsApp groups and chat histories by centralizing them in a single, easy-to-use website.
 
-## Available Scripts
+## Project Overview
 
-In the project directory, you can run:
+Students often struggle to find past papers when they need them most, especially near exams. PaperHub allows students to find and download a specific paper in under 30 seconds, compared to scrolling through weeks of messages. This project is developed as a Minimum Viable Product (MVP) based on real user research and validation.
 
-### `npm start`
+## Team Members
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- M. Haseeb – L1S23BSCS0336  
+- Ali Hamza – L1S23BSCS0321  
+- Faisal Khalid – L1F23BSCS0192  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## User Research and Validation
 
-### `npm test`
+### Key Learnings
+- Students are frustrated with finding past papers.
+- Past papers are essential because they reflect real exam patterns.
+- Students mainly use such platforms near exams, not daily.
+- Most students prefer downloading PDFs instead of viewing them online.
+- Academic resources are scattered and lack a unified platform.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Design Changes Based on Feedback
+Initially, the navigation consisted of four screens: Department, Program, Subject, and Past Papers. By using Async Storage to save the user’s Department and Program, the flow was reduced to two screens: Subject and Past Papers, resulting in a better user experience.
 
-### `npm run build`
+### Validated and Disproved Assumptions
+Validated assumptions include the strong need for past papers and the requirement for a unified platform. Disproved assumptions include daily usage of the platform and preference for online viewing over PDF downloads.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Data Sources
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Survey data from over 1000 students
+- WhatsApp chat data from FOIT CS Department groups
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## MVP Scope and Features
 
-### `npm run eject`
+### Included Features
+- Mid-term papers
+- Final exam papers
+- Quizzes
+- Assignments
+All materials are accessible within a single website with structured navigation and search.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Out of Scope
+- Rating system for past papers
+- Student reviews
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Value to Users
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+PaperHub provides quick and easy access to downloadable past papers, saving students significant time during exam preparation and removing dependency on unorganized chat histories.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Technical Stack
 
-## Learn More
+Frontend: React.js with Tailwind CSS  
+Backend: Node.js with Express.js  
+Database: Supabase or Firebase  
+Deployment: Vercel
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Feature Prioritization
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+High priority features include the database structure (Department → Subject → File) and search functionality. Medium priority is focused on creating a clean and visually appealing user interface.
 
-### Code Splitting
+## Challenges and Mitigation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The biggest challenge is data entry and collection. This is addressed by focusing on a single department (FOIT) as a proof of concept rather than attempting to populate the entire university’s data within a limited timeframe.
 
-### Analyzing the Bundle Size
+## Project Status
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is currently an MVP under development and intended for educational and academic use.
+>>>>>>> 33b203c34fab2d3b2d5a13e0820817cf60f897df
